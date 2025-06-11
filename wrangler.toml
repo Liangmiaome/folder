@@ -1,0 +1,37 @@
+name = "folder"
+compatibility_date = "2025-03-10"  # Use latest compatibility date
+main = "./dist/server/index.mjs"  # Update this based on your entry file
+compatibility_flags = [ "nodejs_compat" ]
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+
+[[routes]]
+pattern = "folder.deam.top" # Set your custom domain
+custom_domain = true
+
+# Bindings for Cloudflare D1
+[[d1_databases]]
+binding = "DB"
+database_id = "f94dc983-0448-4f05-83c8-c46d573ce811" # Set your database ID
+database_name = "folder" # Set your database name
+migrations_dir="./dist/database/migrations"
+
+# Bindings for Cloudflare R2
+[[r2_buckets]]
+binding = "BLOB"
+migrations_dir="./dist/database/migrations"
+bucket_name = "folder" # Set your bucket name
+
+# assets
+[assets]
+binding = "ASSETS"
+directory = "./dist/public/"
+
+[vars]
+NUXT_SESSION_PASSWORD="" # Set your session password with at least 32 characters
+NUXT_OAUTH_GITHUB_CLIENT_ID="" # Set your GitHub OAuth client ID
+NUXT_OAUTH_GITHUB_CLIENT_SECRET="" # Set your GitHub OAuth client secret
+NUXT_OAUTH_GOOGLE_CLIENT_ID=""  # Set your Google OAuth client ID
+NUXT_OAUTH_GOOGLE_CLIENT_SECRET="" # Set your Google OAuth client Secret
