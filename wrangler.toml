@@ -21,7 +21,7 @@ migrations_dir="./dist/database/migrations"
 # Bindings for Cloudflare R2
 [[r2_buckets]]
 binding = "BLOB"
-migrations_dir="./dist/database/migrations"
+# migrations_dir="./dist/database/migrations" 
 bucket_name = "folder" # Set your bucket name
 
 # assets
