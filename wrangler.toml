@@ -16,12 +16,12 @@ custom_domain = true
 binding = "DB"
 database_id = "f94dc983-0448-4f05-83c8-c46d573ce811" # Set your database ID
 database_name = "folder" # Set your database name
-migrations_dir="./dist/database/migrations"
+migrations_dir="./server/database/migrations" # migrations_dir="./dist/database/migrations"
 
 # Bindings for Cloudflare R2
 [[r2_buckets]]
 binding = "BLOB"
-migrations_dir="./dist/database/migrations"
+migrations_dir="./server/database/migrations" #migrations_dir="./dist/database/migrations"
 bucket_name = "folder" # Set your bucket name
 
 # assets
