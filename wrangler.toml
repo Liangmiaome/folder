@@ -30,8 +30,8 @@ binding = "ASSETS"
 directory = "./dist/public/"
 
 [vars]
-NUXT_SESSION_PASSWORD=""
-NUXT_OAUTH_GITHUB_CLIENT_ID="Ov23lirh6fP9Qq1Gcc99"
-NUXT_OAUTH_GITHUB_CLIENT_SECRET="2348351ba7170c3e653e65426d3cc2a216e89272"
-NUXT_OAUTH_GOOGLE_CLIENT_ID="398661425603-ru81jv4o5elh1773n6c9r4l3fijmvqvt.apps.googleusercontent.com"
-NUXT_OAUTH_GOOGLE_CLIENT_SECRET="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"
+NUXT_SESSION_PASSWORD="" # Set your session password with at least 32 characters
+NUXT_OAUTH_GITHUB_CLIENT_ID="" # Set your GitHub OAuth client ID
+NUXT_OAUTH_GITHUB_CLIENT_SECRET="" # Set your GitHub OAuth client secret
+NUXT_OAUTH_GOOGLE_CLIENT_ID=""  # Set your Google OAuth client ID
+NUXT_OAUTH_GOOGLE_CLIENT_SECRET="" # Set your Google OAuth client Secret
